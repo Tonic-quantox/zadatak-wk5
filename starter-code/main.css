@@ -1,0 +1,73 @@
+body {
+    background-color: #f6f8ff;
+    font-family: "Space Mono",monospace;
+}
+
+#row_top{
+    margin-top: 20%;
+}
+
+#search_field{
+    float: left
+}
+
+#input_field{
+    border:0px
+}
+
+#search_div{
+    background-color: white;
+    color: white;
+}
+
+#basic-addon1{
+    padding: 0px;
+    border: 0px;
+    background-color: white;
+}
+#search_icon{
+    background-color: white;
+    color: white;
+}
+
+#search_button{
+    padding: 0px;
+    border: 0px;
+    background-color: white;
+}
+
+#search_group_rounded{
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+#search_main_col{
+    padding: 0px;
+}
+#main_content{
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#dark_light{
+    text-align: right;
+}
+
+.lightmode{
+    background-color: #f6f8ff;
+}
+
+.lightmodefont{
+    color:#f6f8ff
+}
+
+.darkmodefont{
+    color:#2b3442
+}
+
+.darkmode{
+    background-color: #2b3442 ;
+}
+
+/* #1e2a47 za darkmode*/

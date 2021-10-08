@@ -1,26 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+
 </head>
-<body>
+<body class="lightmode">
+  <div class="container">
+    <div class="row" id="row_top">
+      <div class="col-sm-1"> 
+      </div>
+      <div class="col-sm-10">
 
-  devfinder
 
-  Light
-  Dark
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>devfinder</h3>
+          </div>
+          <div class="col-sm-6" id="dark_light">
+            <div id="change_mode">
+              <span id="mode_text">Dark</span>
+              <img src="./assets/icon-moon.svg" class="img-fluid" alt="Dark" id="mode_icon"> 
+            </div>
+            <!--<div>
+              Light
+              <img src="./assets/icon-sun.svg" class="img-fluid" alt="Dark">
+            </div>-->
+            
+            
+          </div>  
 
-  Search GitHub username...
-  Search
+        </div>
 
-  Joined
+        <div class="row">
+          <div class="col-sm-12" id="search_main_col">
+            <div class="input-group mb-3" id="search_group_rounded">
+              <div class="input-group-prepend" id="search_div">
+                <span class="input-group-text" id="basic-addon1"><img src="./assets/icon-search.svg" class="img-fluid" alt="Search" ></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search GitHub username..." aria-label="Username" aria-describedby="basic-addon1" id="search_input">
+              <div class="input-group-append" id="search_icon">
+                <span class="input-group-text" id="search_button"><button type="button" class="btn btn-primary btn-lg">Search</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  Repos
-  Followers
-  Following
+        <div class="row" id="main_content">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="https://avatars.githubusercontent.com/u/583231?v=4" class="img-fluid rounded-circle" alt="Dark" id="user_image">
+              </div>
+              <div class="col-sm-5">
+                <h4 id="name"></h4>
+                <h5 id="login"></h5>
+                <h6 id="bio"></h6>
+              </div>
+              <div class="col-sm-4">
+                <h6 id="joined_at"></h6>
+              </div>
+            </div>
+            <div class="row">
+              
+              <div class="col-sm-3">
+                 
+              </div>
+              <div class="col-sm-9">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <h6>Repos</h6>
+                    <h4 id="reposnumber">111</h4>  
+                  </div>
+                  <div class="col-sm-4">
+                    <h6>Followers</h6>
+                    <h4 id="folowersnumber">222</h4>
+                  </div>
+                  <div class="col-sm-4">
+                    <h6>Following</h6>
+                    <h4 id="folowingnumber">334</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3">
+                 
+              </div>
+              <div class="col-sm-9">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div>
+                      <img src="./assets/icon-location.svg" class="img-fluid " alt="Location"> <span><h6 id="location_link"></h6> </span>
+                    </div>
+                    <div>
+                      <img src="./assets/icon-website.svg" class="img-fluid " alt="Website"> <span><h6 id="website_link"></h6> </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div>
+                      <img src="./assets/icon-twitter.svg" class="img-fluid " alt="Twitter"> <span><h6 id="twitter_link"></h6> </span>
+                    </div>
+                    <div>
+                      <img src="./assets/icon-company.svg" class="img-fluid " alt="Location"> <span><h6 id="company_link"></h6> </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+            </div>
+          </div>
+          <!-- <div class="col-sm-6">
+            <div>
+              <img src="./assets/icon-twitter.svg" class="img-fluid " alt="Twitter"> <span><h6 id="twitter_link"></h6> </span>
+            </div>
+            <div>
+              <img src="./assets/icon-company.svg" class="img-fluid " alt="Location"> <span><h6 id="company_link"></h6> </span>
+            </div>-->
+          </div> 
+        </div>
+
+        </div>
+
+      </div>
+      <div class="col-sm-1">
+      </div>
+    </div>
+
+
+
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
 </html>
